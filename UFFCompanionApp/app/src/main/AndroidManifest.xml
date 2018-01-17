@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.side_projects.andorid.higherlower"
+<manifest package="com.side_projects.android.uffcompanionapp"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
@@ -14,16 +14,6 @@
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".CorrectGuessActivity">
-            <intent-filter>
-
-                <action android:name="com.side_projects.andorid.higherlower.CorrectGuessActivity"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-
             </intent-filter>
         </activity>
     </application>

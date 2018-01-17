@@ -1,5 +1,6 @@
 package com.side_projects.andorid.higherlower
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 
 import android.os.Bundle
@@ -58,6 +59,8 @@ class MainActivity : AppCompatActivity() {
             lblFeedback.setText("Too Low")
         } else {
             lblFeedback.setText("Got it!")
+
+            openCorrectGuessScreen()
         }
     }
 
@@ -71,5 +74,12 @@ class MainActivity : AppCompatActivity() {
                 guessNumber()
             }
         }
+    }
+
+    fun openCorrectGuessScreen () {
+        var intent = Intent(this, CorrectGuessActivity::class.java)
+
+        startActivity(intent)
+
     }
 }
